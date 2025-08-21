@@ -35,13 +35,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 8),
 
-                    // INPUT EMAIL
+                  
                     TextFormField(
                       decoration: const InputDecoration(
-                        labelText: 'Email', // Label kolom
-                        hintText: 'Masukkan email', // Hint dalam kolom
-                        prefixIcon: Icon(Icons.email_outlined), // Ikon email di depan
-                        border: OutlineInputBorder(), // Border kotak
+                        labelText: 'Email',
+                        hintText: 'Masukkan email', 
+                        prefixIcon: Icon(Icons.email_outlined), 
+                        border: OutlineInputBorder(), 
                       ),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -61,9 +61,9 @@ class _LoginPageState extends State<LoginPage> {
                       },
                     ),
 
-                    gap(), // Spasi antar input
+                    gap(), 
 
-                    // INPUT PASSWORD
+                    
                     TextFormField(
                       obscureText: !_isPasswordVisible,
                       decoration: InputDecoration(
@@ -97,9 +97,9 @@ class _LoginPageState extends State<LoginPage> {
                       },
                     ),
 
-                    gap(), // Spasi bawah password
+                    gap(), 
 
-                    // TOMBOL MASUK
+                   
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -110,9 +110,9 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         onPressed: () {
-                          // Cek validasi form sebelum lanjut
+                          
                           if (_formKey.currentState?.validate() ?? false) {
-                            // Navigasi ke halaman home jika login berhasil
+                            
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
@@ -128,7 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white, // Warna teks putih
+                              color: Colors.white, 
                             ),
                           ),
                         ),
@@ -144,6 +144,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  // Widget helper untuk spasi antar elemen
+ 
   Widget gap() => const SizedBox(height: 16);
 }

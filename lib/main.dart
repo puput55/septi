@@ -11,15 +11,15 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplikasi Flutter', // Judul aplikasi
+      title: 'Aplikasi Flutter', 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
       ),
-      debugShowCheckedModeBanner: false, // Hilangkan banner debug
-      home: const LoginPage(), // Halaman pertama saat aplikasi dibuka
+      debugShowCheckedModeBanner: false,
+      home: const LoginPage(), 
     );
   }
 }
